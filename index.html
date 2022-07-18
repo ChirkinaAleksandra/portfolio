@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+    	<title>Регистрация Яндекс.Почта</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+   	   	<link rel="stylesheet" href="main.css">
+</head> 
+
+<body bgcolor="#BACCAE">
+	<header align="center">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Yandex_icon.svg" width="70" height="70">
+	</header>
+	<h1 align="center">Тест-кейсы на регистрацию (Яндекс.Почта)</h1>
+
+	<table width="100%">
+	
+		<thead align="center" valign="middle">
+	<tr align="center" valign="middle">
+	
+	<th>№</th>
+	<th>Название</th>
+	<th width="20%">Описание</th>
+	<th>Шаги</th>
+	<th width="50%">Ожидаемые результаты</th>
+	</tr>
+		</thead>
+
+	<tbody>
+	<tr align="center">
+	<td rowspan="2" align="center" valign="top"><b>Y_001</b></td>
+	<td rowspan="2" align="center" valign="top"><b>Запуск страницы регистрации</b></td>
+	<td rowspan="2" align="center" valign="top">Переход <br>по ссылке <a href="https://passport.yandex.ru/registration/mail?utm_source=serp&origin=serp_organic_mail">"Регистрация Яндекс.Почта"</a></td>
+	<td align="left" valign="top"><b>1. Перейти по гиперссылке</b></td>
+	<td align="left" valign="top">1. Загрузка формы регистрации на сайте</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left" valign="top"><b>2. Проверить расположение графических интерфейсов</td>
+	<td align="left">2. Все поля отображаются согласно спецификации</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td align="center" valign="top"><b>Y_002</b></td>
+	<td align="center" valign="top"><b>Регистрация с незаполненными полями</b></td>
+	<td align="center" valign="top">Отправить пустые поля на сервер </td>
+	<td align="left" valign="top"><b>1. Нажать кнопку "Зарегистрироваться"</b></td>
+	<td align="left">1. Все незаполненные поля подчеркиваются красным. Вывод соообщения "Пожалуйста, укажите имя" около поля "Имя". Данные не проходят в базу данных</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td rowspan="8" align="center" valign="top"><b>Y_003</b></td>
+	<td rowspan="8" align="center" valign="top"><b>Регистрация <br>с валидными данными</b></td>
+	<td rowspan="8" align="center" valign="top">Заполнить все поля регистрации, отправить <br>на сервер валидные данные</td>
+	<td align="left"><b>1. Ввести корректное имя кириллицей в поле "Имя"</b><br>
+	<ul type="circle">
+	<li><i>Иван</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">1. В поле "Имя" отображается введеное Имя</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>2. Ввести корректную фамилию кириллицей в поле "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>Иванов</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">2. В поле "Фамилия" отображается введенная фамилия</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>3. Ввести валидный логин в поле "Придумайте логин"</b><br>
+	<ul type="circle">
+	<li><i>Hflkhw.1</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">3. В поле "Придумайте логин" отображается введенный логин</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>4. Ввести валидный пароль в поле "Придумайте пароль"</b><br>
+	<ul type="circle">
+	<li><i>wuwuwuw123</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">4. В поле "Придумайте пароль" отображается знак * равный количеству введенных символов</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>5. Повторить валидный пароль в поле "Повторите пароль"</b><br>
+	<ul type="circle">
+	<li><i>wuwuwuw123</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">5. В поле "Повторите пароль" отображается знак * равный количеству введенных символов</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left"><b>6. Введите валидный номер телефона в поле "Номер мобильного телефона"</b><br>
+	<ul type="circle">
+	<li><i>+7-9999999999</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">6. В поле "Номер мобильного телефона" отображается введенный номер</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left"><b>7. Подтвердить номер мобильного телефона</b><br></td>
+	<td align="left" valign="top">7. Номер телефона подтвержден</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>8. Нажать кнопку "Зарегистрироваться"</b><br></td>
+	<td align="left" valign="top">8. Переход на следующий этап регистрации. Данные внесены в базу данных</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td align="center" valign="top" valign="top"><b>Y_004</b></td>
+	<td align="center" valign="top" valign="top"><b>Ввод и отправка данных с диакритическими знаками в полях "Имя" и "Фамилия"</b></td>
+	<td align="center" valign="top" valign="top">Ввести букву ё</td>
+	<td align="left" valign="top"><b>1. Ввести данные с буквой ё в поля ввода "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>Алёна</i></li>
+	<li><i>Рёй</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">1. В полях "Имя" и "Фамилия" отображаются введенные данные с буквой ё</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td rowspan="9" align="center" valign="top"><b>Y_005</b></td>
+	<td rowspan="9" align="center" valign="top"><b>Ввод и отправка данных со спец.знаками <br>в полях "Имя" <br>и "Фамилия"</b></td>
+	<td rowspan="9" align="center" valign="top">Ввести спец.знаки: ! @  % <> {} ; " * :</td>
+	<td align="left"><b>1. Ввести данные со спец. знаком ! в поля ввода данных "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>Анна!</i></li>
+	<li><i>!Смирнова</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">1. В полях "Имя" и "Фамилия" отображаются данные со спец.знаком !</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>2. Ввести данные со спец. знаком @ в поля ввода данных "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>Анна@</i></li>
+	<li><i>@Смирнова</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">2. В полях "Имя" и "Фамилия" отображаются данные со спец.знаком @</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>3. Ввести данные со спец. знаком % в поля ввода данных "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>Анна%</i></li>
+	<li><i>%Смирнова</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">3. В полях "Имя" и "Фамилия" отображаются данные со спец.знаком %</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>4. Ввести данные со спец. знаком <> в поля ввода данных "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i><Анна></i></li>
+	<li><i><Смирнова></i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">4. В полях "Имя" и "Фамилия" отображаются данные со спец.знаком <></td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>5. Ввести данные со спец. знаком {} в поля ввода данных "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>{Анна}</i></li>
+	<li><i>{Смирнова}</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">5. Сообщение об ошибке "Не заполнено или некорректное значение в поле Имя/Фамилия", данные на сервер не проходят</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left"><b>6. Ввести данные со спец. знаком ; в поля ввода данных "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>Анна;</i></li>
+	<li><i>Смирнова;</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">6. В полях "Имя" и "Фамилия" отображаются данные со спец.знаком ;</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left" valign="top"><b>7. Ввести данные со спец. знаком " в поля ввода данных "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>Анна"</i></li>
+	<li><i>Смирнова"</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">7. В полях "Имя" и "Фамилия" отображаются данные со спец.знаком "</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left" valign="top"><b>8. Ввести данные со спец. знаком * в поля ввода данных "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>Анна*</i></li>
+	<li><i>Смирнова*</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">8. В полях "Имя" и "Фамилия" отображаются данные со спец.знаком *</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>9. Ввести данные со спец. знаком : в поля ввода данных "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>Анна:</i></li>
+	<li><i>:Смирнова</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">9. В полях "Имя" и "Фамилия" отображаются данные со спец.знаком :</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td rowspan="3" align="center" valign="top"><b>Y_006</b></td>
+	<td rowspan="3" align="center" valign="top"><b>Ввод и отправка данных <br>с введенными пробелами</b></td>
+	<td rowspan="3" align="center" valign="top">Ввести пробел перед текстом, в середине и за текстом</a></td>
+	<td align="left" valign="top"><b>1. Ввести валидное значение в поля ввода данных "Имя" и "Фамилия" затем нажать пробел</b><br>
+	<ul type="circle">
+	<li><i>Анастасия </i></li>
+	<li><i>Смирнова </i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">1. В полях "Имя" и "Фамилия" отображаются введенные значения с пробелом в конце</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left"><b>2. Ввести валидное значение в поля ввода "Имя" и "Фамилия" с проблем посередине<br>
+	<ul type="circle">
+	<li><i>Анаста сия</i></li>
+	<li><i>Смир нова</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">2. В полях "Имя" и "Фамилия" отображаются введенные значения с пробелом посередине</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>3. Нажать пробел затем ввести валидное значение в поля ввода "Имя" и "Фамилия"<br>
+	<ul type="circle">
+	<li><i> Анастасия</i></li>
+	<li><i> Смирнова</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">3. В полях "Имя" и "Фамилия" отображаются введенные значения с пробелом в начале</td>
+	</tr>
+		</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td align="center" valign="top" valign="top"><b>Y_007</b></td>
+	<td align="center" valign="top" valign="top"><b>Ввод и отправка данных латинскими буквами в полях "Имя" <br>и "Фамилия"</b></td>
+	<td align="center" valign="top" valign="top">Ввести латинские буквы</td>
+	<td align="left"valign="top"><b>1. Ввести данные с латинскими буквами в поля ввода "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>Anna</i></li>
+	<li><i>Smirnova</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">1. В полях "Имя" и "Фамилия" отображаются введенные значения с латинскими буквами</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td rowspan="2" align="center" valign="top"><b>Y_008</b></td>
+	<td rowspan="2" align="center" valign="top"><b>Ввод и отправка данных с числами <br>в полях ввода "Имя", "Фамилия"</b></td>
+	<td rowspan="2" align="center" valign="top">Ввести цифры перед текстом и за текстом</a></td>
+	<td align="left" valign="top"><b>1. Ввести валидное значение в поля ввода данных "Имя" и "Фамилия" с цифрами вначале</b><br>
+	<ul type="circle">
+	<li><i>11Анастасия</i></li>
+	<li><i>11Смирнова</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">1. В полях "Имя" и "Фамилия" отображаются введенные значения с цифрами в начале</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left"><b>2. Ввести валидное значение в поля ввода "Имя" и "Фамилия" с цифрами в конце<br>
+	<ul type="circle">
+	<li><i>Анастасия11</i></li>
+	<li><i>Смирнова11</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">2. В полях "Имя" и "Фамилия" отображаются введенные значения с цифрами в конце</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td align="center" valign="top"><b>Y_009</b></td>
+	<td align="center" valign="top"><b>Заполнение формы "Номер мобильного телефона"</b></td>
+	<td align="center" valign="top">Реакция программы на неверный код страны <br>и номер оператора</td>
+	<td align="left" valign="top"><b>1. Ввести в после несуществующий номер оператора</b><br>
+	<ul type="circle">
+	<li><i>+7-4122222222</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">1. Сообщение об ошибке "Недопустимый формат номера"</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td rowspan="2" align="center" valign="top"><b>Y_0010</b></td>
+	<td rowspan="2" align="center" valign="top"><b>Ввод и отправка разных данных <br>в полях "Придумайте пароль" <br>и "Повторите пароль"</b></td>
+	<td rowspan="2" align="center" valign="top">Реакция программы на разные данные <br>в полях "Придумайте пароль" <br>и "Повторите пароль"</a></td>
+	<td align="left" valign="top"><b>1. Ввести валидный пароль в поле "Придумайте пароль" </b><br>
+	<ul type="circle">
+	<li><i>wuwuwuw123</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">1. В поле "Придумайте пароль" отображается знак * равный количеству введенных символов</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left"><b>2. Ввести в поле "Повторите пароль" другое значение<br>
+	<ul type="circle">
+	<li><i>uw123</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">2. Сообщение об ошибке "Подтверждение не совпадает с паролем"</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td rowspan="2" align="center" valign="top"><b>Y_0011</b></td>
+	<td rowspan="2" align="center" valign="top"><b>Граничные значения полей ввода данных</b></td>
+	<td rowspan="2" align="center" valign="top">Ввести мин. <br>и макс. набор символов в поля "Имя" <br>и "Фамилия"</a></td>
+	<td align="left" valign="top"><b>1. Ввести минимальное количество символов в поля "Имя" и "Фамилия"</b><br>
+	<ul type="circle">
+	<li><i>А</i></li>
+	<li><i>А</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">1. В полях "Имя" и "Фамилия" отображаются введенные данные</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left" valign="top"><b>2. Ввести максимальное количество символов в поля "Имя" и "Фамилия"<br>
+	<ul type="circle">
+	<li><i>Ааааааааааааааааааааааааааааааааааааааааааааааааааа</i></li>
+	<li><i>Ааааааааааааааааааааааааааааааааааааааааааааааааааа</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">2. Сообщение об ошибке:<br>
+	<ul type="circle">
+	<li><i>"Пожалуйста, укажите более короткий вариант имени, до 50 символов"</i></li>
+	<li><i>"Пожалуйста, укажите более короткий вариант фамилии, до 50 символов"</i></li>
+	</ul>
+	</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td rowspan="4" align="center" valign="top"><b>Y_0012</b></td>
+	<td rowspan="4" align="center" valign="top"><b>Работа горячих клавиш</b></td>
+	<td rowspan="4" align="center" valign="top">Корректная работа формы при нажатии навигации <br>по сайту <br>с помощью клавиатуры</a></td>
+	<td align="left" valign="top"><b>1. Ввести валидные данные в поля ввода "Имя" и "Фамилия", нажать на клавиатуре стрелки</b><br>
+	<ul type="circle">
+	<li><i>вправо</i></li>
+	<li><i>влево</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">1. Перевод курсива по буквам в полях ввода в соответствие с направлением нажатых стрелок</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left"><b>2. Нажать на клавиатуре стрелки<br>
+	<ul type="circle">
+	<li><i>вверх</i></li>
+	<li><i>вниз</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">2. Переход курсива на начало или конец поля, в соответствие с направлением нажатых стрелок</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left" valign="top"><b>3. Кликнуть на поле "Имя", нажать на клавиатуре на клавишу Tab</td>
+	<td align="left" valign="top">3. При каждом нажатии происходит переход на следующее поле</td>
+	</tr>
+	
+	<tr align="left">
+	<td align="left"><b>4. Выделить текст, нажать на клавиатуре комбинацию клавиш<br>
+	<ul type="circle">
+	<li><i>Ctrl+c</i></li>
+	<li><i>Ctrl+m</i></li>
+	</ul>
+	</td>
+	<td align="left" valign="top">4. Происходит копирование и вставка текста в поле</td>
+	</tr>
+	</tbody>
+	
+	<tbody>
+	<tr align="center">
+	<td rowspan="2" align="center" valign="top"><b>Y_0013</b></td>
+	<td rowspan="2" align="center" valign="top"><b>Масштаб страницы</b></td>
+	<td rowspan="2" align="center" valign="top">Изменить масштаб страницы <br>в адресной строке сайта</a></td>
+	<td align="left" valign="top"><b>1. Уменьшить окно регистрации до 25%</td>
+	<td align="left" valign="top">1. Масштаб изменен, окно становится меньше, текст строки, заголовки, иконки, логотип, уменьшается заданным параметрам не меняя свое расположение</td>
+	</tr>
+
+	<tr align="left">
+	<td align="left" valign="top"><b>2.  Увеличить окно регистрации до 500%</td>
+	<td align="left" valign="top">2. Масштаб изменен, окно увеличивается согласно заданным параметрам</td>
+	</tr>
+	</tbody>
+	
+	</table> 
+</body> 
+
+<footer align="center">
+    <p> <b>Чиркина Александра</b> </p>
+    <p><a href="https://t.me/myr_myrmiay">Telegram</a></p>    
+</footer>
+</html>  
