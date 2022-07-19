@@ -38,3 +38,13 @@
    ![Запрос регистрация](https://raw.githubusercontent.com/ChirkinaAleksandra/portfolio/main/image/SOAP%20UI%20запрос%20регистрация.png)
 
 </details>
+<br>
+
+**Postman** - это HTTP-клиент для тестирования API. HTTP-клиенты тестируют отправку запросов с клиента на сервер и получение ответа от сервера.<br><br>
+<details><summary>*В разработке*</summary>
+
+   ![Запрос](ссылка)
+
+</details>
+
+## Часть 4. Составление запросов для мониторинга HTTP/HTTPS посредством Charles и Fiddler
