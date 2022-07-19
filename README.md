@@ -51,7 +51,7 @@
 В следующей части работы можно увидеть запросы, созданные с помощью **Fiddler и Charles**<br><br>
 **Fiddler** можно использовать для тестирования безопасности, перфоманс, серого ящика, функциональности, интеграционного.
 <br>
-<details><summary>Запрос профиля:</summary>
+<details><summary>Создание прямого запроса для редактирования своего профиля:</summary>
 
    ![Запрос профиля](https://raw.githubusercontent.com/ChirkinaAleksandra/portfolio/main/image/Fiddler.png)
 
